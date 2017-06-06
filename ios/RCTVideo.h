@@ -1,4 +1,9 @@
+#if __has_include(<React/RCTView.h>)
 #import <React/RCTView.h>
+#else
+#import "RCTView.h"
+#endif
+
 #import <AVFoundation/AVFoundation.h>
 #import "AVKit/AVKit.h"
 #import "UIView+FindUIViewController.h"
